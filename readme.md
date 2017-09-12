@@ -1,3 +1,3 @@
-This is a proof of concept project utilizing WMATA api data and shortest path algorithms to find the shortest path between 2 Washington Metro stations.
+<p>This is a proof of concept project utilizing WMATA api data and shortest path algorithms to find the shortest path between 2 Washington Metro stations.</p>
 
-Hosted <a href=" https://cameronstinson4.github.io/metro-shortest-path/"> here on github pages </a>
+<p>Hosted [here on github pages](https://cameronstinson4.github.io/metro-shortest-path/) </a></p>
