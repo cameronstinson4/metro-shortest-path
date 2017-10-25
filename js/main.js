@@ -185,7 +185,7 @@ function spa(start, end) {
     
     if (i !== 0 && i !== path.length) {
       for (id in edges._data) {
-        if (id.substring(0, 7) == `${path[i]} ${path[i - 1]}` || id.substring(0, 7) == `${path[i]} ${path[i + 1]}`) {
+        if (id.substring(0, 7) == `${path[i]} ${path[i - 1]}` || id.substring(0, 7) == `${path[i - 1]} ${path[i]}`) {
           edges._data[id].color = "black";
           edges._data[id].width = 100;
           
