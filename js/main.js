@@ -179,20 +179,27 @@ function spa(start, end) {
   //network.setSelection({ nodes: path });
 
   for (var i = 0; i < path.length; i++) {
-    nodes._data[path[i]].color = "black";
-    nodes._data[path[i]].size =  100;
-    nodes._data[path[i]].font =  {size: 100, strokeColor: '#ffffff', background: 'white'	};
+    // nodes._data[path[i]].color = "black";
+    // nodes._data[path[i]].size =  100;
+    // nodes._data[path[i]].font =  {size: 100, strokeColor: '#ffffff', background: 'white'	};
+    network.clustering.updateClusteredNode(path[i], {color : 'black', size : 100});
+    
     
     if (i !== 0 && i !== path.length) {
       for (id in edges._data) {
         if (id.substring(0, 7) == `${path[i]} ${path[i - 1]}` || id.substring(0, 7) == `${path[i - 1]} ${path[i]}`) {
-          edges._data[id].color = "black";
-          edges._data[id].width = 100;
+          
+          network.clustering.updateEdge(id, {
+            color: "black",
+            width: 100
+          })
+          
+ 
           
         }
       }
     }
   }
 
-  network.setData({nodes: nodes, edges: edges});
+  //network.setData({nodes: nodes, edges: edges});
 }

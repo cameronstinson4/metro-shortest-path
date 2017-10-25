@@ -34,7 +34,7 @@ function Graph(){
     this.vertices[name] = edges;
   };
 
-  this.shortestPath = function (start, finish, network) {
+  this.shortestPath = function (start, finish, network, edges) {
     network.unselectAll();
 
     var nodes = new PriorityQueue(),
@@ -58,14 +58,9 @@ function Graph(){
 
     while(!nodes.isEmpty()) {
       smallest = nodes.dequeue();
-    //   network.focus(smallest, {});
-      
-    //   setTimeout(function() {
- 
-    //     console.log (smallest);
-    // }, 100);
 
-
+      network.clustering.updateClusteredNode(smallest, {color : 'pink', size : 100});
+    
       if(smallest === finish) {
         path = [];
 
@@ -84,6 +79,11 @@ function Graph(){
       for(neighbor in this.vertices[smallest]) {
         alt = distances[smallest] + this.vertices[smallest][neighbor];
 
+        // network.clustering.updateEdge(`${smallest} ${neighbor}`, {
+        //   color: "pink",
+        //   width: 50
+        // })
+
         if(alt < distances[neighbor]) {
           distances[neighbor] = alt;
           previous[neighbor] = smallest;
@@ -98,4 +98,8 @@ function Graph(){
 
     return path;
   };
+
+  function loop() {
+    
+  }
 }
