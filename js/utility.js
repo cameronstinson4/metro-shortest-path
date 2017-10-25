@@ -36,7 +36,7 @@ function Graph(){
 
   this.shortestPath = function (start, finish, network) {
     network.unselectAll();
-    
+
     var nodes = new PriorityQueue(),
         distances = {},
         previous = {},
@@ -58,6 +58,13 @@ function Graph(){
 
     while(!nodes.isEmpty()) {
       smallest = nodes.dequeue();
+    //   network.focus(smallest, {});
+      
+    //   setTimeout(function() {
+ 
+    //     console.log (smallest);
+    // }, 100);
+
 
       if(smallest === finish) {
         path = [];
