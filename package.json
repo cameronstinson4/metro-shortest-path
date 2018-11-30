@@ -1,0 +1,22 @@
+{
+  "name": "metro-shortest-path",
+  "version": "1.0.0",
+  "description": "<p>This is a proof of concept project utilizing WMATA api data and shortest path algorithms to find the shortest path between 2 Washington Metro stations.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronstinson4/metro-shortest-path.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronstinson4/metro-shortest-path/issues"
+  },
+  "homepage": "https://github.com/cameronstinson4/metro-shortest-path#readme",
+  "dependencies": {
+    "vis": "^4.21.0"
+  }
+}
