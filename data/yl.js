@@ -19,20 +19,24 @@ var ylPath = [
     "StationName": "King St-Old Town",
     "SeqNum": 3,
     "DistanceToPrev": 3734
-  },
-  {
+  },, {
     "LineCode": "YL",
     "StationCode": "C12",
     "StationName": "Braddock Road",
-    "SeqNum": 4,
+    "SeqNum": 2,
     "DistanceToPrev": 3453
-  },
-  {
+  }, {
+    "LineCode": "YL",
+    "StationCode": "C11",
+    "StationName": "Potomac Yard",
+    "SeqNum": 3,
+    "DistanceToPrev": 7503
+  }, {
     "LineCode": "YL",
     "StationCode": "C10",
     "StationName": "Ronald Reagan Washington National Airport",
-    "SeqNum": 5,
-    "DistanceToPrev": 16108
+    "SeqNum": 4,
+    "DistanceToPrev": 8605
   },
   {
     "LineCode": "YL",
@@ -82,40 +86,5 @@ var ylPath = [
     "StationName": "Mt Vernon Sq 7th St-Convention Center",
     "SeqNum": 12,
     "DistanceToPrev": 2985
-  },
-  {
-    "LineCode": "YL",
-    "StationCode": "E02",
-    "StationName": "Shaw-Howard U",
-    "SeqNum": 13,
-    "DistanceToPrev": 2527
-  },
-  {
-    "LineCode": "YL",
-    "StationCode": "E03",
-    "StationName": "U Street/African-Amer Civil War Memorial/Cardozo",
-    "SeqNum": 14,
-    "DistanceToPrev": 2555
-  },
-  {
-    "LineCode": "YL",
-    "StationCode": "E04",
-    "StationName": "Columbia Heights",
-    "SeqNum": 15,
-    "DistanceToPrev": 4715
-  },
-  {
-    "LineCode": "YL",
-    "StationCode": "E05",
-    "StationName": "Georgia Ave-Petworth",
-    "SeqNum": 16,
-    "DistanceToPrev": 4717
-  },
-  {
-    "LineCode": "YL",
-    "StationCode": "E06",
-    "StationName": "Fort Totten",
-    "SeqNum": 17,
-    "DistanceToPrev": 8348
   }
 ]

@@ -19,20 +19,24 @@ var blPath = [
     "StationName": "King St-Old Town",
     "SeqNum": 3,
     "DistanceToPrev": 20246
-  },
-  {
+  }, {
     "LineCode": "BL",
     "StationCode": "C12",
     "StationName": "Braddock Road",
-    "SeqNum": 4,
+    "SeqNum": 2,
     "DistanceToPrev": 3453
-  },
-  {
+  }, {
+    "LineCode": "BL",
+    "StationCode": "C11",
+    "StationName": "Potomac Yard",
+    "SeqNum": 3,
+    "DistanceToPrev": 7503
+  }, {
     "LineCode": "BL",
     "StationCode": "C10",
     "StationName": "Ronald Reagan Washington National Airport",
-    "SeqNum": 5,
-    "DistanceToPrev": 16108
+    "SeqNum": 4,
+    "DistanceToPrev": 8605
   },
   {
     "LineCode": "BL",
